@@ -1,0 +1,90 @@
+import type { Ionicons } from '@expo/vector-icons';
+import type { SFSymbol } from 'sf-symbols-typescript';
+
+type IoniconName = keyof typeof Ionicons.glyphMap;
+
+/**
+ * Every icon the app uses, named by meaning. `Icon` renders the SF Symbol on iOS and the
+ * Ionicons glyph on Android, so screens never pick a platform glyph themselves.
+ */
+export const icons = {
+  today: { sf: 'checklist', ionicon: 'checkbox-outline' },
+  progress: { sf: 'square.grid.3x3.fill', ionicon: 'grid-outline' },
+  settings: { sf: 'gearshape.fill', ionicon: 'settings-outline' },
+  plus: { sf: 'plus', ionicon: 'add' },
+  check: { sf: 'checkmark', ionicon: 'checkmark' },
+  close: { sf: 'xmark', ionicon: 'close' },
+  back: { sf: 'chevron.left', ionicon: 'chevron-back' },
+  forward: { sf: 'chevron.right', ionicon: 'chevron-forward' },
+  edit: { sf: 'pencil', ionicon: 'pencil' },
+  trash: { sf: 'trash', ionicon: 'trash-outline' },
+  flame: { sf: 'flame.fill', ionicon: 'flame' },
+  bell: { sf: 'bell.fill', ionicon: 'notifications' },
+  bellOff: { sf: 'bell.slash', ionicon: 'notifications-off-outline' },
+  calendar: { sf: 'calendar', ionicon: 'calendar-outline' },
+  clock: { sf: 'clock', ionicon: 'time-outline' },
+  sparkles: { sf: 'sparkles', ionicon: 'sparkles-outline' },
+  restore: { sf: 'arrow.clockwise', ionicon: 'refresh-outline' },
+  card: { sf: 'creditcard', ionicon: 'card-outline' },
+  document: { sf: 'doc.text', ionicon: 'document-text-outline' },
+  shield: { sf: 'lock.shield', ionicon: 'shield-checkmark-outline' },
+  star: { sf: 'star', ionicon: 'star-outline' },
+  mail: { sf: 'envelope', ionicon: 'mail-outline' },
+  palette: { sf: 'paintpalette', ionicon: 'color-palette-outline' },
+  infinity: { sf: 'infinity', ionicon: 'infinite-outline' },
+  lock: { sf: 'lock.fill', ionicon: 'lock-closed-outline' },
+  water: { sf: 'drop.fill', ionicon: 'water' },
+  walk: { sf: 'figure.walk', ionicon: 'walk' },
+  workout: { sf: 'dumbbell.fill', ionicon: 'barbell' },
+  sleep: { sf: 'bed.double.fill', ionicon: 'bed' },
+  read: { sf: 'book.fill', ionicon: 'book' },
+  leaf: { sf: 'leaf.fill', ionicon: 'leaf' },
+  heart: { sf: 'heart.fill', ionicon: 'heart' },
+  meal: { sf: 'fork.knife', ionicon: 'restaurant' },
+  pills: { sf: 'pills.fill', ionicon: 'medkit' },
+  write: { sf: 'pencil.line', ionicon: 'create' },
+  laptop: { sf: 'laptopcomputer', ionicon: 'laptop' },
+  music: { sf: 'music.note', ionicon: 'musical-notes' },
+  language: { sf: 'character.bubble', ionicon: 'language' },
+  sun: { sf: 'sun.max.fill', ionicon: 'sunny' },
+  moon: { sf: 'moon.fill', ionicon: 'moon' },
+  money: { sf: 'dollarsign.circle.fill', ionicon: 'cash' },
+  phone: { sf: 'iphone', ionicon: 'phone-portrait' },
+  smile: { sf: 'face.smiling', ionicon: 'happy' },
+  brain: { sf: 'brain.head.profile', ionicon: 'bulb' },
+  coffee: { sf: 'cup.and.saucer.fill', ionicon: 'cafe' },
+  bike: { sf: 'bicycle', ionicon: 'bicycle' },
+  camera: { sf: 'camera.fill', ionicon: 'camera' },
+  home: { sf: 'house.fill', ionicon: 'home' },
+  target: { sf: 'target', ionicon: 'locate' },
+} satisfies Record<string, { sf: SFSymbol; ionicon: IoniconName }>;
+
+export type IconName = keyof typeof icons;
+
+/** The icons a user can pick for a habit, in the order the editor shows them. */
+export const HABIT_ICONS: IconName[] = [
+  'water',
+  'walk',
+  'workout',
+  'bike',
+  'sleep',
+  'sun',
+  'moon',
+  'meal',
+  'coffee',
+  'pills',
+  'leaf',
+  'heart',
+  'brain',
+  'smile',
+  'read',
+  'write',
+  'language',
+  'music',
+  'laptop',
+  'phone',
+  'money',
+  'camera',
+  'home',
+  'target',
+];

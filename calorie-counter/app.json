@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "BiteCount",
+    "slug": "calorie-counter",
+    "scheme": "caloriecounter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.caloriecounter",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.example.caloriecounter",
+      "adaptiveIcon": {
+        "backgroundColor": "#E0532F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FAFAF8",
+          "dark": {
+            "backgroundColor": "#111110"
+          }
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}

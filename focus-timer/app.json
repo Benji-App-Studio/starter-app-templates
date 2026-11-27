@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Deepflow",
+    "slug": "focus-timer",
+    "scheme": "focustimer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.focustimer",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.example.focustimer",
+      "adaptiveIcon": {
+        "backgroundColor": "#C2410C",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FAF6F1",
+          "dark": {
+            "backgroundColor": "#15110E"
+          }
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}

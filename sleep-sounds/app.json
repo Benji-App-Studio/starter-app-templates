@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Nightmix",
+    "slug": "sleep-sounds",
+    "scheme": "sleepsounds",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.sleepsounds",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.example.sleepsounds",
+      "adaptiveIcon": {
+        "backgroundColor": "#3B2F8F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F4F2FB",
+          "dark": {
+            "backgroundColor": "#0B0A1A"
+          }
+        }
+      ],
+      "expo-font",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": true
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}

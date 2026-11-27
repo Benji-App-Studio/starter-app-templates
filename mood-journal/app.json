@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Daymood",
+    "slug": "mood-journal",
+    "scheme": "moodjournal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.moodjournal",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.example.moodjournal",
+      "adaptiveIcon": {
+        "backgroundColor": "#D96C8A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-web-browser",
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FBF7F2",
+          "dark": {
+            "backgroundColor": "#1A1614"
+          }
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}

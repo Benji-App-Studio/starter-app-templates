@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Lean Hours",
+    "slug": "fasting-timer",
+    "scheme": "fastingtimer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.fastingtimer",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.example.fastingtimer",
+      "adaptiveIcon": {
+        "backgroundColor": "#2F6FE0",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F4F6FB",
+          "dark": {
+            "backgroundColor": "#0C1020"
+          }
+        }
+      ],
+      "expo-font",
+      "expo-notifications"
+    ]
+  }
+}

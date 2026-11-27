@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Daily Dots",
+    "slug": "habit-tracker",
+    "scheme": "habittracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.habittracker",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.example.habittracker",
+      "adaptiveIcon": {
+        "backgroundColor": "#5B4BDB",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F7F6FB",
+          "dark": {
+            "backgroundColor": "#121022"
+          }
+        }
+      ],
+      "expo-font",
+      "expo-notifications"
+    ]
+  }
+}

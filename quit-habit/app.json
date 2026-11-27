@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Clearstreak",
+    "slug": "quit-habit",
+    "scheme": "quithabit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.quithabit",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.example.quithabit",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F8A5F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F4F7F5",
+          "dark": {
+            "backgroundColor": "#0E1512"
+          }
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}

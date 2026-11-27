@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Tallyo",
+    "slug": "expense-tracker",
+    "scheme": "expensetracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.expensetracker",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.example.expensetracker",
+      "adaptiveIcon": {
+        "backgroundColor": "#1F6F5F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F6F4EE",
+          "dark": {
+            "backgroundColor": "#121715"
+          }
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
